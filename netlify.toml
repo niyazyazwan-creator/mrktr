@@ -1,0 +1,4 @@
+[build]
+  publish = "."
+
+# Upload repository directly to Netlify; no build command required.
