@@ -1,8 +1,0 @@
-/* Accessible, minimalist full-screen navigation; focus trap, Escape, body scroll lock. */
-(()=>{'use strict';const hero=document.querySelector('.hero-exact'),openBtn=hero?.querySelector('.premium-menu-trigger'),panel=hero?.querySelector('.premium-nav'),closeBtn=panel?.querySelector('.nav-close');if(!hero||!openBtn||!panel||!closeBtn)return;
-let prevFocus=null,lastOverflow='';
-function show(){if(panel.classList.contains('open'))return;prevFocus=document.activeElement;lastOverflow=document.body.style.overflow;panel.inert=false;panel.classList.add('open');panel.setAttribute('aria-hidden','false');openBtn.setAttribute('aria-expanded','true');openBtn.setAttribute('aria-label','Close navigation menu');document.body.style.overflow='hidden';closeBtn.focus();}
-function hide(){if(!panel.classList.contains('open'))return;panel.classList.remove('open');panel.setAttribute('aria-hidden','true');panel.inert=true;openBtn.setAttribute('aria-expanded','false');openBtn.setAttribute('aria-label','Open navigation menu');document.body.style.overflow=lastOverflow;(prevFocus||openBtn).focus();}
-openBtn.addEventListener('click',()=>panel.classList.contains('open')?hide():show());closeBtn.addEventListener('click',hide);panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',hide));
-document.addEventListener('keydown',e=>{if(!panel.classList.contains('open'))return;if(e.key==='Escape'){e.preventDefault();hide()}if(e.key==='Tab'){const els=[...panel.querySelectorAll('a,button')].filter(x=>!x.disabled);let a=els[0],b=els[els.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();b.focus()}else if(!e.shiftKey&&document.activeElement===b){e.preventDefault();a.focus()}}});
-})();
