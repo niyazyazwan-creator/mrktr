@@ -1,0 +1,25 @@
+/* MRKTR mobile only — desktop V55 stylesheet is unmodified. */
+@media(max-width:720px){
+ html{scroll-behavior:smooth;}
+ body.exact-mode .story-journey{height:auto!important;min-height:0!important;position:relative!important;overflow:visible!important;}
+ body.exact-mode .story-pin{position:relative!important;height:auto!important;min-height:0!important;overflow:visible!important;display:block!important;--face-opacity:1!important;}
+ body.exact-mode .story-pin .hero-exact{position:relative!important;inset:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;height:auto!important;min-height:0!important;max-height:none!important;padding:94px 0 27px!important;opacity:1!important;transform:none!important;overflow:visible!important;}
+ body.exact-mode .hero-exact .v55-hero-picture{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio: 1 / .78!important;overflow:hidden!important;order:1;}
+ body.exact-mode .hero-exact .v55-hero-picture>.exact-art{position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 39%!important;transform:none!important;}
+ body.exact-mode .hero-exact .official-brand{position:absolute!important;top:20px!important;left:5.2%!important;z-index:30!important;}
+ body.exact-mode .hero-exact .hair-video,body.exact-mode .hero-exact .pointer-smoke{display:none!important;}
+ body.exact-mode .hero-exact .mobile-v55-message{display:block!important;order:2;width:100%;padding:0 12px;margin:-4px auto 0;text-align:center;position:relative;z-index:5;opacity:1!important;transform:none!important;animation:none!important;}
+ .mobile-v55-message h1{margin:0!important;color:#f5f5f5;font-family:'DM Sans',sans-serif;font-weight:500;font-size:clamp(21px,5.5vw,31px);line-height:1.25;letter-spacing:-.045em;}
+ .mobile-v55-message h1 span{display:block;white-space:nowrap;}
+ .mobile-v55-message h1 em{font-family:Georgia,serif;font-weight:400;}
+ .mobile-v55-rule{display:block;width:56px;height:2px;background:#d4af37;margin:17px auto 0;}
+ body.exact-mode .hero-exact .v48-home-role{position:relative!important;order:3;inset:auto!important;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;width:auto!important;max-width:94%!important;margin:21px auto 0!important;padding:0!important;transform:none!important;opacity:1!important;animation:none!important;visibility:visible!important;font-size:clamp(9px,2.4vw,11px)!important;letter-spacing:.15em!important;text-align:center!important;}
+ body.exact-mode .hero-exact .v28-about-link,body.exact-mode .hero-exact .hero-cta{position:relative!important;inset:auto!important;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;transform:none!important;opacity:1!important;visibility:visible!important;animation:none!important;margin:0!important;padding:11px 0 13px!important;font-size:clamp(9px,2.7vw,12px)!important;}
+ body.exact-mode .hero-exact .v28-about-link{order:4;align-self:flex-start;margin:24px 0 0 6%!important;max-width:42%!important;}
+ body.exact-mode .hero-exact .hero-cta{order:5;align-self:flex-end;margin:-40px 6% 0 0!important;max-width:49%!important;}
+ body.exact-mode .story-pin .visor-statement,body.exact-mode .story-pin .visor-absence,body.exact-mode .story-pin .shared-visor,body.exact-mode .story-pin .vision-copy,body.exact-mode .story-pin .v27-gold-bridge,body.exact-mode .story-pin .vision-cursor,body.exact-mode .story-pin .visor-detach-mist,body.exact-mode .story-pin .transition-bats,.ticker-v25{display:none!important;}
+ body.exact-mode .about-v43{padding-top:52px!important;}
+ body.exact-mode .v35-scroll-guide{display:none!important;}
+}
+@media(max-width:370px){.mobile-v55-message h1{font-size:20px!important;}}
+@media(min-width:721px){.mobile-v55-message{display:none!important;}}
