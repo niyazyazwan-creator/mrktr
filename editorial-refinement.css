@@ -1,0 +1,59 @@
+/* Scoped editorial refinement; hero and exhibition untouched. */
+.a43-body,.a43-contact-link,.s35-bottom,.t32-topline,.c46-intro-grid,.c46-feature-link,.c46-contact-grid,.v48-enquiry,.v48-enquiry input,.v48-enquiry select,.v48-enquiry button {font-family:Inter,'DM Sans',Arial,sans-serif!important;}
+.a43-contact-link,.t32-topline span,.c46-over-title,.c46-feature-top,.c46-feature-bottom,.c46-label,.c46-contact-block small,.v48-form-kicker,.v48-privacy-note,.v48-field label,.v48-form-help,.v48-submit,.v48-skip-to-form {text-transform:none!important;letter-spacing:0!important;}
+.c46-intro-grid h2,.v48-enquiry-intro h3 {font-family:Inter,'DM Sans',Arial,sans-serif!important;letter-spacing:-.055em!important;}
+.s35-bottom .s35-counter,.s35-bottom>span:first-child,.t32-topline>span:last-child,.v48-form-disclaimer,.c46-feature-tag:empty {visibility:hidden;}
+.v48-form-disclaimer{display:none!important;}
+.v48-field label,.v48-form-help,.v48-privacy-note{font-size:13px!important;line-height:1.5;}
+
+/* Keep the moving service labels separated without decorative stars. */
+.ticker-v25 .ticker-set, .story-pin .v27-gold-track .ticker-set {gap:clamp(30px,4.4vw,80px);padding-right:clamp(30px,4.4vw,80px);}
+.v48-star,.t26-asterisk,.t32-glass-plus {display:none!important;}
+
+/* Service detail panel only */
+#services .s52-detail-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,30%);gap:24px;align-items:start;}
+#services .s52-service-detail{min-width:0;box-sizing:border-box;padding:24px;border:1px solid #303030;border-radius:16px;background:#141414;color:#eee;font-family:Inter,Arial,sans-serif;text-align:left;}
+#services .s52-service-detail h3{font-size:23px;line-height:1.2;margin:0 0 12px;font-weight:600;color:#fff;}
+#services .s52-service-detail h4{font-size:13px;font-weight:600;margin:0 0 10px;color:#bbb;}
+#services .s52-service-detail p,#services .s52-service-detail li{font-size:14px;line-height:1.6;color:#ccc;margin:0;}
+#services .s52-service-detail hr{border:0;border-top:1px solid #333;margin:18px 0;}
+#services .s52-service-detail ul{list-style:none;padding:0;margin:0;}
+#services .s52-service-detail li{padding:3px 0 3px 20px;position:relative;}
+#services .s52-service-detail li:before{content:'✓';color:#d4af37;position:absolute;left:0;}
+#services .s52-enquire{display:block;width:100%;border:0;border-radius:8px;background:#d4af37;color:#111;padding:13px 10px;margin-top:24px;font:600 13px Inter,Arial,sans-serif;cursor:pointer;}
+#services .s52-enquire:focus-visible{outline:2px solid white;outline-offset:3px;}
+#services .s52-detail-layout .s35-shelf{min-width:0;}
+@media(min-width:901px) and (max-width:1200px){#services .s52-detail-layout .s35-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+@media(max-width:900px){#services .s52-detail-layout{display:block;}#services .s52-service-detail{grid-column:1/-1;width:100%;padding:20px;}}
+#mrktr-enquiry-form{scroll-margin-top:90px;}
+
+/* Keep the navigation arrow separate from the contact buttons. */
+body .v35-scroll-guide{top:50%!important;bottom:auto!important;right:18px!important;transform:translateY(-50%)!important;}
+@media(max-width:767px){body .v35-scroll-guide{right:10px!important;}}
+/* Optional light editorial palette; cinematic scenes stay untouched. */
+.mrktr-theme-toggle{position:fixed;top:24px;right:100px;z-index:1000;width:40px;height:40px;border:1px solid #555;border-radius:50%;background:#181818;color:#fff;display:grid;place-items:center;cursor:pointer;font:22px Inter,Arial,sans-serif;}
+.mrktr-theme-toggle:focus-visible{outline:2px solid #c9a346;outline-offset:3px;}
+body.v50-menu-open .mrktr-theme-toggle{visibility:hidden;}
+@media(max-width:767px){.mrktr-theme-toggle{top:24px;right:84px;width:36px;height:36px;}}
+html[data-mrktr-theme=light] :is(#about,#services,#trusted-brands,#testimonials,#contact,.footer-v46){background:#f5f4f1!important;color:#242424!important;}
+html[data-mrktr-theme=light] :is(#about,#services,#trusted-brands,#testimonials,#contact,.footer-v46) :is(h1,h2,h3,h4,p,small,label,a,li,span){color:#292929!important;}
+html[data-mrktr-theme=light] :is(#about,#services,#trusted-brands,#testimonials,#contact) :is(.a43-visual-glow,.s53-organic-net,.c46-atmosphere){opacity:.12!important;}
+html[data-mrktr-theme=light] :is(.s52-glass,.s52-service-detail,.t32-chip,.t32-glass,.t26-review,.c46-feature-link,.v48-enquiry){background:#fff!important;border-color:#d7d5cf!important;color:#242424!important;box-shadow:none!important;}
+html[data-mrktr-theme=light] :is(.s52-glass:hover,.s52-glass.is-active,.s52-glass[aria-pressed=true]){border-color:#9b7624!important;}
+html[data-mrktr-theme=light] :is(#contact input,#contact select,#contact textarea){background:#fff!important;color:#222!important;border-color:#bcbab5!important;color-scheme:light;}
+html[data-mrktr-theme=light] #contact input::placeholder{color:#666!important;}
+html[data-mrktr-theme=light] :is(.s52-enquire,.v48-submit){background:#d4af37!important;color:#111!important;}
+html[data-mrktr-theme=light] .t33-logo-mono{filter:brightness(0)!important;opacity:.75!important;}
+html[data-mrktr-theme=light] .mrktr-theme-toggle{background:#fff;color:#222;border-color:#ccc;}
+
+/* Slim editorial service marquees, matching the supplied reference. */
+.ticker-v25{background:#ededed!important;color:#242424!important;padding:0!important;height:48px;display:flex;align-items:center;border-block:1px solid #d8d8d8;box-sizing:border-box;}
+.story-pin .v27-gold-bridge{background:color-mix(in srgb,#d4af37 calc((1 - var(--v27-track-alpha,0))*100%),#ededed)!important;color:#242424!important;}
+.ticker-v25,.story-pin .v27-gold-track{font:400 14px/1.3 Inter,Arial,sans-serif!important;letter-spacing:-.015em!important;}
+.ticker-v25 .ticker-set,.story-pin .v27-gold-track .ticker-set{gap:26px!important;padding-right:26px!important;}
+.ticker-v25 .service-item,.story-pin .v27-gold-track .service-item{font-weight:400;text-transform:none!important;}
+.ticker-v25 .service-item:nth-child(odd),.story-pin .v27-gold-track .service-item:nth-child(odd){font-weight:600;}
+.ticker-v25 .ticker-track,.story-pin .v27-gold-track{animation-duration:30s;}
+body.v27-bridge-ready .ticker-v25{display:none;}
+@media(prefers-reduced-motion:reduce){body.v27-bridge-ready .ticker-v25{display:flex!important;}.ticker-v25 .ticker-track,.story-pin .v27-gold-track{animation:none!important;}}
+@media(max-width:720px){body .ticker-v25,body .story-pin .v27-gold-bridge{display:none!important;}}
